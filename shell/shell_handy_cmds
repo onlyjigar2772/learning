@@ -1,0 +1,22 @@
+# cmd to send files to multiple app hosts
+# for each server, do a copy (Preserving the permissions) to tmp folder.
+Example-1
+for j in `cat server.txt`; do scp -p <file_name> $j:/tmp; done
+
+Example-2
+# To send files to a sequence of servers.
+for j in {1..9}; do echo $j; scp -p <file_name> user_id@server_name_$j.server_rest.com:/tmp;done
+# for j in {10..60}
+
+# For executing all the scripts in a folder
+for i in `ls *.sh`; do ./$i restart; done
+
+# To find files
+find . -name "<file_name>" # search for files in present dir with the name
+
+# To search for text in a folder.
+grep -r <search_text>
+
+
+# To find the directory or file size
+du -sh <dir_name/file_name>
