@@ -18,8 +18,11 @@ find . -name "<file_name>" # search for files in present dir with the name
 grep -r <search_text>
 
 grep -Ril "<search_text>" <location>
-# R --> stands for recursive. i --> ignore case. l stands for "show the file name, not the result itself`.
+# R --> stands for recursive. i --> ignore case.
+# l stands for "show the file name, not the result itself`. Remove it when you want the line.
 # n --? Line number
+# Pass the --color option to the grep command display matched text/words in color on the terminal:
+# $ export GREP_OPTIONS='--color=auto' GREP_COLOR='100;8'
 
 # To find the directory or file size
 du -sh <dir_name/file_name>
