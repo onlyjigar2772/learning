@@ -17,6 +17,20 @@ find . -name "<file_name>" # search for files in present dir with the name
 # To search for text in a folder.
 grep -r <search_text>
 
+grep -Ril "<search_text>" <location>
+# R --> stands for recursive. i --> ignore case. l stands for "show the file name, not the result itself`.
+# n --? Line number
 
 # To find the directory or file size
 du -sh <dir_name/file_name>
+
+# Creating an archive using tar command
+tar cvf archive_name.tar dirname/
+# Extracting (untar) an archive using tar command
+tar xvf archive_name.tar
+
+# Creating a jar
+jar -cf jar_name.jar dirname/
+
+# Extracting jar
+jar -xf jar_name.jar
