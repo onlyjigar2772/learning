@@ -1,0 +1,30 @@
+Intro to SQL: Querying and managing data
+
+Contents:
+1. About
+2. SQL basics
+
+About:
+
+Learn how to use SQL to store, query, and manipulate data. SQL is a special-purpose programming language designed for managing data in a relational database, and is used by a huge number of apps and organizations.
+
+# Create tables
+CREATE TABLE groceries (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER);
+
+# Inserting data
+INSERT INTO groceries VALUES (1, "Bananas", 4);
+INSERT INTO groceries VALUES (2, "Peanut Butter", 1);
+INSERT INTO groceries VALUES (1, "Dark chocolate bars", 2);
+
+# Querying data
+SELECT * FROM groceries;
+SELECT books FROM groceries;
+SELECT * FROM groceries ORDER BY aisle;
+SELECT * FROM groceries WHERE aisle > 5 ORDER BY aisle; # Filter using where
+
+# Aggregating data - Max, min, sum and avg
+SELECT SUM(quantity) FROM groceries;
+# To display the total number of items in each aisle.
+# We add it to the end of the query
+SELECT aile, SUM(quantity) FROM groceries GROUP BY aisle; # It first does the grouping, then calculates the sum
+
