@@ -1,6 +1,8 @@
 About this section:
 
-I have signed up for the below website. Going forward i will spend time learning technologies and skill that are relevant to me.
+This is a self reference repo. I will push out contents which will aid me learning skills that i wish to over a span of time.
+
+I have signed up for the below website.
 
 https://www.codecademy.com/learn
 
@@ -8,8 +10,11 @@ https://www.khanacademy.org/computing/computer-programming
 
 https://dash.generalassemb.ly
 
-For Practice:
+For hands on:
+
 hackerrank
+https://www.hackerrank.com/dashboard
+
 https://www.codewars.com/ --> FB
 
 Reference:
